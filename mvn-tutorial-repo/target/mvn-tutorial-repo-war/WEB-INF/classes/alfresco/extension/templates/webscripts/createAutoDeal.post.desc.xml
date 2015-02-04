@@ -1,0 +1,9 @@
+<webscript>
+    <shortname>create new auto deal</shortname>
+    <url>/deal/create</url>
+    <url>/deal/create.json</url>
+    <url>/deal/create.html</url>
+    <format default="json">extension</format>
+    <authentication>user</authentication>
+    <transaction>none</transaction>
+</webscript>
