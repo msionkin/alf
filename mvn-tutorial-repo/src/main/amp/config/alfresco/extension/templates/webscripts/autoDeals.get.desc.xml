@@ -1,0 +1,9 @@
+<webscript>
+    <shortname>Get all auto deals</shortname>
+    <description>Returns a list of auto deals</description>
+    <url>/deal/all</url>
+    <url>/deal/all.json</url>
+    <format default="json">extension</format>
+    <authentication>guest</authentication>
+    <transaction>none</transaction>
+</webscript>
