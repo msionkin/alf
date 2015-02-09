@@ -19,7 +19,7 @@
             <title>Auto Deal Operation</title>
             <parent>cm:content</parent>
             <properties>
-                <property name="ad:carMake">
+                <property name="ad:car">
                     <type>d:text</type>
                 </property>
                 <property name="ad:carModel">
@@ -33,7 +33,7 @@
                 <association name="ad:seller">
                     <source>
                         <mandatory>true</mandatory>
-                        <many>false</many>
+                        <many>true</many>
                     </source>
                     <target>
                         <class>cm:person</class>
@@ -44,7 +44,7 @@
                 <association name="ad:customer">
                     <source>
                         <mandatory>true</mandatory>
-                        <many>false</many>
+                        <many>true</many>
                     </source>
                     <target>
                         <class>cm:person</class>

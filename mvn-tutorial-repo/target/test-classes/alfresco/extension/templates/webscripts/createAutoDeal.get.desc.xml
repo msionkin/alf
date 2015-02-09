@@ -1,6 +1,0 @@
-<webscript>
-    <shortname>auto deal form</shortname>
-    <description>Form for uploading new file into Repository</description>
-    <url>/deal/create</url>
-    <authentication>user</authentication>
-</webscript>
