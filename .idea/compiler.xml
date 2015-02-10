@@ -24,10 +24,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="mvn-tutorial-repo" />
+        <module name="mvn-tutorial-share" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mvn-tutorial-repo" target="1.7" />
+      <module name="mvn-tutorial-share" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

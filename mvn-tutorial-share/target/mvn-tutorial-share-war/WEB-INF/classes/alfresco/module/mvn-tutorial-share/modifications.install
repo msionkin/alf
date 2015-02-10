@@ -6,5 +6,5 @@ add|/WEB-INF/lib/slf4j-log4j12-1.5.6.jar
 add|/scripts/demoamp.js
 add|/jsp/demoamp.jsp
 add|/css/demoamp.css
-update|/WEB-INF/classes/alfresco/module/mvn-tutorial-share/log4j.properties|/WEB-INF/classes/alfresco/module/backup/dc07561d-ab7c-11e4-83c8-7bfc3a1b2bf3.bin
-update|/WEB-INF/classes/alfresco/module/mvn-tutorial-share/module-context.xml|/WEB-INF/classes/alfresco/module/backup/dc0cfb6e-ab7c-11e4-83c8-7bfc3a1b2bf3.bin
+update|/WEB-INF/classes/alfresco/module/mvn-tutorial-share/log4j.properties|/WEB-INF/classes/alfresco/module/backup/513de1f7-b144-11e4-a71f-5d1b8a8e2267.bin
+update|/WEB-INF/classes/alfresco/module/mvn-tutorial-share/module-context.xml|/WEB-INF/classes/alfresco/module/backup/51444a98-b144-11e4-a71f-5d1b8a8e2267.bin

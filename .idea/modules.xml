@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/alf-project.iml" filepath="$PROJECT_DIR$/.idea/alf-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvn-tutorial-repo/mvn-tutorial-repo.iml" filepath="$PROJECT_DIR$/mvn-tutorial-repo/mvn-tutorial-repo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvn-tutorial-share/mvn-tutorial-share.iml" filepath="$PROJECT_DIR$/mvn-tutorial-share/mvn-tutorial-share.iml" />
     </modules>
   </component>
 </project>

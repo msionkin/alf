@@ -1,14 +1,14 @@
 function main() {
-    var car = "";
-    var model = "";
-    var cost = 0;
-    var sellerUserName = "";
-    var seller = null;
-    var customerUserName = "";
-    var customer = null;
-    var timestamp = new Date().getTime();
-    var contentType = "cm:content";
-    var testFolder = companyhome.childByNamePath("Test");
+    var car = "",
+        model = "",
+        cost = 0,
+        sellerUserName = "",
+        seller = null,
+        customerUserName = "",
+        customer = null,
+        timestamp = new Date().getTime(),
+        contentType = "ad:autoDealOperation",
+        testFolder = companyhome.childByNamePath("Test");
 
     if (testFolder == null) {
         testFolder = companyhome.createFolder("Test");
@@ -32,6 +32,7 @@ function main() {
       myNode.properties["ad:car"] = car;
       myNode.properties["ad:carModel"] = model;
       myNode.properties["ad:cost"] = cost;
+      myNode.save();
 
       seller = people.getPerson(sellerUserName);
       if (seller == null) {
@@ -39,7 +40,7 @@ function main() {
         status.message = "Unknown seller username";
         status.redirect = true;
       } else {
-        myNode.properties["ad:seller"] = seller;
+        myNode.createAssociation(seller,"ad:seller")
       }
 
       customer = people.getPerson(customerUserName);
@@ -48,11 +49,11 @@ function main() {
         status.message = "Unknown customer username";
         status.redirect = true;
       } else {
-        myNode.properties["ad:customer"] = customer;
+        myNode.createAssociation(customer,"ad:customer")
       }
 
       myNode.content = "This is a sample " + contentType + " document called " + car + model;
-      myNode.save();
+
     }
      
 

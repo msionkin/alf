@@ -2,97 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed74c4fc-93a8-4159-b9da-bd924541c550" name="Default" comment="createAutoDeal post json work">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.ftl" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\system\system\09b99818-017f-4fd6-b118-4fb3ab03d6de\_0.cfs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\system\system\09b99818-017f-4fd6-b118-4fb3ab03d6de\segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\system\system\2cfde1e9-aaef-4eb5-a0d9-ed15f6a33a94\_0.cfs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\system\system\2cfde1e9-aaef-4eb5-a0d9-ed15f6a33a94\_0_1.del" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\system\system\2cfde1e9-aaef-4eb5-a0d9-ed15f6a33a94\segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\system\system\34bcc735-c55c-43c9-ba8e-2a220133710b\_0.cfs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\system\system\34bcc735-c55c-43c9-ba8e-2a220133710b\segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\system\system\791b667f-0401-4a2b-a5e1-e1ff19078f2f\_0.cfs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\system\system\791b667f-0401-4a2b-a5e1-e1ff19078f2f\segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\system\system\8027071e-77c0-47e2-9531-330967051b4a\_0.cfs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\system\system\8027071e-77c0-47e2-9531-330967051b4a\_0_1.del" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\system\system\8027071e-77c0-47e2-9531-330967051b4a\segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\system\system\b18af504-df64-4bb0-9616-50d32d7fa232\_0.cfs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\system\system\b18af504-df64-4bb0-9616-50d32d7fa232\segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\system\system\f8f0c2cf-2660-44eb-b410-23eda7742e7f\_0.cfs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\system\system\f8f0c2cf-2660-44eb-b410-23eda7742e7f\segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\workspace\SpacesStore\80085433-ff7a-4eac-9ad9-d2f0042e674f\_0_2.del" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\workspace\SpacesStore\b99fbd6d-e707-4121-a05d-9417ebf45ebc\_0.cfs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\workspace\SpacesStore\b99fbd6d-e707-4121-a05d-9417ebf45ebc\segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\workspace\SpacesStore\ea263494-9839-42c3-9f55-ec8f38192fbb\_0.cfs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\workspace\SpacesStore\ea263494-9839-42c3-9f55-ec8f38192fbb\segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\workspace\SpacesStore\ef6a375d-f15d-41fd-85e4-4c743e115815\_0.cfs" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\workspace\SpacesStore\ef6a375d-f15d-41fd-85e4-4c743e115815\segments.gen" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\src\main\amp\config\alfresco\extension\templates\webscripts\createAutoDeal.get.desc.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\src\main\amp\config\alfresco\extension\templates\webscripts\createAutoDeal.get.html.ftl" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\src\main\amp\config\alfresco\extension\templates\webscripts\createAutoDeal.post.html.ftl" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\alfresco.log.2015-02-02" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\extension\templates\webscripts\createAutoDeal.get.desc.ftl" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\extension\templates\webscripts\createAutoDeal.get.desc.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\extension\templates\webscripts\createAutoDeal.get.html.ftl" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\extension\templates\webscripts\helloworld.get.desc.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\extension\templates\webscripts\helloworld.get.html.ftl" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\module\backup\561d8976-aba4-11e4-989d-fdf0af99f45a.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\module\backup\56215a07-aba4-11e4-989d-fdf0af99f45a.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\module\backup\5625ede8-aba4-11e4-989d-fdf0af99f45a.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\module\backup\56294949-aba4-11e4-989d-fdf0af99f45a.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\module\backup\562ccbba-aba4-11e4-989d-fdf0af99f45a.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\module\backup\5630000b-aba4-11e4-989d-fdf0af99f45a.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\module\backup\5633345c-aba4-11e4-989d-fdf0af99f45a.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\module\backup\563668ad-aba4-11e4-989d-fdf0af99f45a.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\module\backup\563d1f6e-aba4-11e4-989d-fdf0af99f45a.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\module\backup\5643af1f-aba4-11e4-989d-fdf0af99f45a.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\module\backup\564b5040-aba4-11e4-989d-fdf0af99f45a.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\module\backup\565191d1-aba4-11e4-989d-fdf0af99f45a.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\module\backup\5656c1f2-aba4-11e4-989d-fdf0af99f45a.bin" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo-war\WEB-INF\classes\alfresco\module\mvn-tutorial-repo\model\scModel.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo\config\alfresco\extension\templates\webscripts\createAutoDeal.get.desc.ftl" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo\config\alfresco\extension\templates\webscripts\createAutoDeal.get.desc.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo\config\alfresco\extension\templates\webscripts\createAutoDeal.get.html.ftl" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo\config\alfresco\extension\templates\webscripts\helloworld.get.desc.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo\config\alfresco\extension\templates\webscripts\helloworld.get.html.ftl" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\mvn-tutorial-repo\config\alfresco\module\mvn-tutorial-repo\model\scModel.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\test-classes\alfresco\extension\templates\webscripts\createAutoDeal.get.desc.ftl" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\test-classes\alfresco\extension\templates\webscripts\createAutoDeal.get.desc.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\test-classes\alfresco\extension\templates\webscripts\createAutoDeal.get.html.ftl" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\test-classes\alfresco\extension\templates\webscripts\helloworld.get.desc.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\test-classes\alfresco\extension\templates\webscripts\helloworld.get.html.ftl" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\test-classes\alfresco\module\mvn-tutorial-repo\model\scModel.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\tomcat\logs\access_log.2015-02-02" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\target\tomcat\logs\access_log.2015-02-03" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\src\main\amp\config\alfresco\extension\templates\webscripts\createAutoDeal.post.js" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js" />
+      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\archive\SpacesStore\f44ebfb8-7e38-4f90-842a-60129ffd5704\_0.cfs" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-repo\alf_data_dev\lucene-indexes\archive\SpacesStore\f44ebfb8-7e38-4f90-842a-60129ffd5704\segments.gen" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-share\target\mvn-tutorial-share-war\WEB-INF\classes\alfresco\module\backup\dc07561d-ab7c-11e4-83c8-7bfc3a1b2bf3.bin" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-share\target\mvn-tutorial-share-war\WEB-INF\classes\alfresco\module\backup\dc0cfb6e-ab7c-11e4-83c8-7bfc3a1b2bf3.bin" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\mionkin\alf-project\mvn-tutorial-share\target\tomcat\work\Tomcat\localhost\share\SESSIONS.ser" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/alf_data_dev/h2_data/alf_dev.h2.db" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/alf_data_dev/h2_data/alf_dev.h2.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo.amp" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo.amp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/lib/mvn-tutorial-repo.jar" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/lib/mvn-tutorial-repo.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo/lib/mvn-tutorial-repo.jar" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo/lib/mvn-tutorial-repo.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/alf_data_dev/lucene-indexes/archive/SpacesStore/f44ebfb8-7e38-4f90-842a-60129ffd5704/segments.gen" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/alf_data_dev/lucene-indexes/archive/SpacesStore/f44ebfb8-7e38-4f90-842a-60129ffd5704/segments.gen" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/alf_data_dev/lucene-indexes/workspace/SpacesStore/80085433-ff7a-4eac-9ad9-d2f0042e674f/segments.gen" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/alf_data_dev/lucene-indexes/workspace/SpacesStore/80085433-ff7a-4eac-9ad9-d2f0042e674f/segments.gen" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share.amp" afterPath="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share.amp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/WEB-INF/lib/mvn-tutorial-share.jar" afterPath="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/WEB-INF/lib/mvn-tutorial-share.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share/lib/mvn-tutorial-share.jar" afterPath="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share/lib/mvn-tutorial-share.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/alf_data_dev/h2_data/alf_dev.lock.db" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/alf_data_dev/h2_data/alf_dev.lock.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/alf_data_dev/h2_data/alf_dev.trace.db" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/alf_data_dev/h2_data/alf_dev.trace.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/target/alfresco.log" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/target/alfresco.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-share/target/alfresco.log" afterPath="$PROJECT_DIR$/mvn-tutorial-share/target/alfresco.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/module/mvn-tutorial-repo/model/autoDeal.xml" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/module/mvn-tutorial-repo/model/autoDeal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/module/mvn-tutorial-repo/model/autoDeal.xml" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/module/mvn-tutorial-repo/model/autoDeal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo/config/alfresco/module/mvn-tutorial-repo/model/autoDeal.xml" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo/config/alfresco/module/mvn-tutorial-repo/model/autoDeal.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/target/test-classes/alfresco/module/mvn-tutorial-repo/model/autoDeal.xml" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/target/test-classes/alfresco/module/mvn-tutorial-repo/model/autoDeal.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.js" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.json.ftl" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.json.ftl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo/config/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo/config/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/target/test-classes/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/target/test-classes/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/module/mvn-tutorial-repo/modifications.install" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/module/mvn-tutorial-repo/modifications.install" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/WEB-INF/classes/alfresco/module/mvn-tutorial-share/modifications.install" afterPath="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/WEB-INF/classes/alfresco/module/mvn-tutorial-share/modifications.install" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo/module.properties" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo/module.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/module/mvn-tutorial-repo/module.properties" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/module/mvn-tutorial-repo/module.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share/module.properties" afterPath="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share/module.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/WEB-INF/classes/alfresco/module/mvn-tutorial-share/module.properties" afterPath="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/WEB-INF/classes/alfresco/module/mvn-tutorial-share/module.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-share/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/mvn-tutorial-share/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="alf-project.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/mvn-tutorial-repo/target/" />
+    <ignored path="$PROJECT_DIR$/mvn-tutorial-share/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,6 +47,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
+  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -116,28 +67,18 @@
       <file leaf-file-name="createAutoDeal.post.json.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
-              <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="371" max-vertical-offset="1139">
+              <caret line="61" column="7" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="autoDeals.get.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="autoDeals.get.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autoDeals.get.json.ftl" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.json.ftl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40306833" vertical-offset="0" max-vertical-offset="717">
-              <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.735007" vertical-offset="0" max-vertical-offset="717">
+              <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -168,13 +109,13 @@
         <option value="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml" />
         <option value="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.ftl" />
         <option value="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml" />
+        <option value="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/autoDeals.get.json.ftl" />
+        <option value="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.json.ftl" />
         <option value="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/module/mvn-tutorial-repo/model/autoDeal.xml" />
+        <option value="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/autoDeals.get.js" />
         <option value="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js" />
         <option value="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js" />
-        <option value="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/autoDeals.get.json.ftl" />
-        <option value="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/autoDeals.get.js" />
         <option value="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.js" />
-        <option value="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.json.ftl" />
       </list>
     </option>
   </component>
@@ -187,6 +128,30 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="mvn-tutorial-share AMP project" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="mvn-tutorial-share AMP project" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
@@ -248,8 +213,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -278,7 +241,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
+              <option name="myItemId" value="mvn-tutorial-share" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -292,33 +255,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
+              <option name="myItemId" value="mvn-tutorial-share" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo-war" />
+              <option name="myItemId" value="tomcat" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -332,343 +273,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo-war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo-war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo-war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alfresco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo-war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alfresco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo-war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alfresco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webscripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alfresco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo-war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alfresco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webscripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alfresco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo-war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alfresco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webscripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="org" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alfresco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="person" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo-war" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="classes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alfresco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="extension" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webscripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
+              <option name="myItemId" value="mvn-tutorial-share" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -686,7 +291,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
+              <option name="myItemId" value="mvn-tutorial-share" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alf-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alf-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvn-tutorial-share" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -702,7 +329,95 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="demoamp" />
+              <option name="myItemId" value="alfresco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alf-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alf-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvn-tutorial-share" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alfresco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alf-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alf-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvn-tutorial-repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alf-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alf-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvn-tutorial-repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alf-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alf-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvn-tutorial-repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -759,125 +474,13 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="alfresco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="amp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alfresco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="amp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alfresco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="context" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf-project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="amp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alfresco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webscripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -887,7 +490,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mvn-tutorial-repo/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mvn-tutorial-share/pom.xml" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
   </component>
@@ -1225,9 +828,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19344473" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19601542" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62416106" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54496646" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23907454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1274,6 +877,30 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="1122">
+          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="476">
+          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.json.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="884">
@@ -1404,20 +1031,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4488636" vertical-offset="0" max-vertical-offset="1921">
-          <caret line="60" column="78" selection-start-line="60" selection-start-column="78" selection-end-line="60" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/resources/META-INF/share-config-custom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.129707" vertical-offset="3805" max-vertical-offset="4522">
-          <caret line="134" column="17" selection-start-line="134" selection-start-column="17" selection-end-line="134" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/tomcat/context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
@@ -1429,14 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5690377" vertical-offset="0" max-vertical-offset="717">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.desc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1493,65 +1098,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/createAutoDeal.post.json.ftl">
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.json.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="393">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82984656" vertical-offset="357" max-vertical-offset="1122">
-          <caret line="56" column="5" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/module/mvn-tutorial-repo/model/autoDeal.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
-          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/autoDeals.get.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4346591" vertical-offset="0" max-vertical-offset="704">
-          <caret line="18" column="38" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/autoDeals.get.json.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28451884" vertical-offset="0" max-vertical-offset="717">
-          <caret line="12" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09483961" vertical-offset="0" max-vertical-offset="717">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1122">
-          <caret line="47" column="41" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.5011338" vertical-offset="0" max-vertical-offset="441">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1564,10 +1114,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.json.ftl">
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40306833" vertical-offset="0" max-vertical-offset="717">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.15419501" vertical-offset="0" max-vertical-offset="441">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.desc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43870968" vertical-offset="0" max-vertical-offset="310">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/autoDeals.get.json.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18967922" vertical-offset="0" max-vertical-offset="717">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/module/mvn-tutorial-repo/model/autoDeal.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.69177127" vertical-offset="184" max-vertical-offset="1105">
+          <caret line="40" column="42" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/createAutoDeal.post.json.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="717">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="303" max-vertical-offset="1139">
+          <caret line="34" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="61" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/autoDeals.get.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/config/alfresco/module/mvn-tutorial-share/module-context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.63987136" vertical-offset="199" max-vertical-offset="510">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/jsp/demoamp.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/resources/META-INF/share-config-custom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.215434" vertical-offset="4211" max-vertical-offset="4522">
+          <caret line="134" column="17" selection-start-line="134" selection-start-column="17" selection-end-line="134" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/tomcat/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="298">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.422819" vertical-offset="0" max-vertical-offset="1921">
+          <caret line="60" column="78" selection-start-line="60" selection-start-column="78" selection-end-line="60" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="371" max-vertical-offset="1139">
+          <caret line="61" column="7" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.735007" vertical-offset="0" max-vertical-offset="717">
+          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
           <folding />
         </state>
       </provider>
