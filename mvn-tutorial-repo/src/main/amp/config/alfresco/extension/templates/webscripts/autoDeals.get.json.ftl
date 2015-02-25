@@ -3,12 +3,12 @@
     <#list docsInfoJson as doc>
         {
             "name" : "${doc.name}",
-            "size" : ${doc.size},
+            "size" : #{doc.size},
             "author": "${doc.author}",
-            "created date": "${doc.createdDate?datetime}",
+            "createdDate": "${doc.createdDate?string["dd.MM.yyyy HH:mm"]}",
             "car": "${doc.car}",
             "carModel": "${doc.carModel}",
-            "cost": ${doc.cost},
+            "cost": #{doc.cost},
             "seller": "${doc.seller}",
             "customer": "${doc.customer}"
         }

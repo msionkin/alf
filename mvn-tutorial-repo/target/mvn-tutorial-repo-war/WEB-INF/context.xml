@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context docBase="C:\\Users\\mionkin\\alf-project\\mvn-tutorial-repo\\target/mvn-tutorial-repo-war" path="/alfresco">
+<Context docBase="C:\\Users\\mionkin\\Documents\\gitHub\\alf\\mvn-tutorial-repo\\target/mvn-tutorial-repo-war" path="/alfresco">
   <!-- 
   <Environment override="false" type="java.lang.Boolean" name="properties/startup.enable" description="A flag that globally enables or disables startup of the major Alfresco subsystems." value="true"/>
   <Environment override="false" type="java.lang.String" name="properties/dir.root" description="The filesystem directory below which content and index data is stored. Should be on a shared disk if this is a clustered installation."/>

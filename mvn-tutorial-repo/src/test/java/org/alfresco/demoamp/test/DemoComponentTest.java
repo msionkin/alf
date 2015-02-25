@@ -11,6 +11,7 @@ import org.alfresco.service.cmr.repository.NodeRef;
 import org.alfresco.service.cmr.repository.NodeService;
 import org.apache.log4j.Logger;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,11 +61,13 @@ public class DemoComponentTest {
     protected NodeService nodeService;
     
     @Test
+    @Ignore
     public void testWiring() {
         assertNotNull(demoComponent);
     }
     
     @Test
+    @Ignore
     public void testGetCompanyHome() {
     	AuthenticationUtil.setFullyAuthenticatedUser(ADMIN_USER_NAME);
         NodeRef companyHome = demoComponent.getCompanyHome();
@@ -75,6 +78,7 @@ public class DemoComponentTest {
     }
     
     @Test
+    @Ignore
     public void testChildNodesCount() {
     	AuthenticationUtil.setFullyAuthenticatedUser(ADMIN_USER_NAME);
         NodeRef companyHome = demoComponent.getCompanyHome();
