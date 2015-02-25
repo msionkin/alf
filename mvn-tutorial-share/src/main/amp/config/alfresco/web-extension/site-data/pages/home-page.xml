@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<page>
+    <id>my-id</id>
+    <page-type>blog-postlist</page-type>
+    <description>my desc</description>
+    <template-instance>home-page</template-instance>
+    <authentication>user</authentication>
+</page>
+

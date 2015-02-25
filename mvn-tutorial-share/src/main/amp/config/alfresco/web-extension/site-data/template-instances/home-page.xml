@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<template-instance>
+<template-type>org/ionkin/my-template</template-type>
+
+<components>
+
+    <component>
+        <region-id>documentlist_v2</region-id>
+        <source-id>repository</source-id>
+        <scope>template</scope>
+        <uri>/demo/home-page</uri>
+    </component>
+
+</components>
+</template-instance>
