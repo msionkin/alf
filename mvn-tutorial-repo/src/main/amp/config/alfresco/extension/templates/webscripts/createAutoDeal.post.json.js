@@ -6,7 +6,7 @@ function main() {
         seller = null,
         customerUserName = "",
         customer = null,
-        timestamp = new Date().getTime(),
+        date = new Date(),
         contentType = "ad:autoDealOperation",
         testFolder = companyhome.childByNamePath("Test");
 
@@ -27,7 +27,11 @@ function main() {
       status.redirect = true;
     }
     else {
-      var myNode = testFolder.createNode(car + model + timestamp, contentType);
+      var myNode = testFolder.createNode(car + " " +
+                                        model + " " +
+                                        date.getDate() + "." +
+                                        (date.getMonth() + 1) + "." +
+                                        date.getFullYear(), contentType);
 
       myNode.properties["ad:car"] = car;
       myNode.properties["ad:carModel"] = model;
@@ -51,9 +55,6 @@ function main() {
       } else {
         myNode.createAssociation(customer,"ad:customer")
       }
-
-      myNode.content = "This is a sample " + contentType + " document called " + car + model;
-
     }
      
 

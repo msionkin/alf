@@ -16,16 +16,23 @@
    	    <div class="hd">Please enter your information</div>
    	    <div class="bd">
    	        <form method="POST" id="addDealDialogForm">
-   	            <label for="car">Car:</label><input type="textbox" name="car" />
-   	            <div class="clear"></div>
-   	            <label for="model">Model:</label><input type="textbox" name="model" />
-   	            <div class="clear"></div>
-   	            <label for="cost">Cost:</label><input type="textbox" name="cost" />
-                <div class="clear"></div>
-                <label for="seller">Seller username:</label><input type="textbox" name="seller" />
-                <div class="clear"></div>
-                <label for="customer">Customer username:</label><input type="textbox" name="customer" />
-                <div class="clear"></div>
+   	            <table>
+   	                <tr>
+   	                    <td><label for="car">Car:</label></td><td><input type="textbox" name="car" /></td>
+   	                </tr>
+   	                <tr>
+                   	    <td><label for="model">Model:</label></td><td><input type="textbox" name="model" /></td>
+                    </tr>
+   	                <tr>
+                   	    <td><label for="cost">Cost:</label></td><td><input type="textbox" name="cost" /></td>
+                   	</tr>
+                    <tr>
+                       <td><label for="seller">Seller username:</label></td><td><input type="textbox" name="seller" /></td>
+                    </tr>
+                    <tr>
+                       <td><label for="customer">Customer username:</label></td><td><input type="textbox" name="customer" /></td>
+                    </tr>
+                </table>
    	        </form>
    	    </div>
    	</div>

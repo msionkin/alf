@@ -1,37 +1,37 @@
-
 YAHOO.namespace("ionkin.container");
-var dialogData;
 YAHOO.util.Event.onDOMReady(function () {
-
+    var dialogData;
     var handleCancel = function() {
 		this.cancel();
 	};
 
     var pushDataToRepository = function () {
-
         var handleSuccess = function() {
          console.log("new deal has been added")
+         window.location.reload();
         };
 
-        var handleFailure = function() {
-     	    alert("Submission failed: " );
+        var handleFailure = function(e) {
+     	    alert("Submission failed: " + e.json.message );
         };
 
         dialogData = YAHOO.ionkin.container.addDealDialog.getData();
-        Alfresco.util.Ajax.jsonPost({
+        if (YAHOO.ionkin.container.addDealDialog.validate()) {
+            Alfresco.util.Ajax.jsonPost({
+                 url: Alfresco.constants.PROXY_URI + "deal/create",
+                 dataObj: {
+                    car : dialogData.car,
+                    model: dialogData.model,
+                    cost : dialogData.cost,
+                    seller: dialogData.seller,
+                    customer: dialogData.customer
+                 },
+                 successCallback: {fn: handleSuccess, scope: YAHOO.ionkin.container.addDealDialog},
+                 failureCallback: {fn: handleFailure, scope: YAHOO.ionkin.container.addDealDialog}
+            });
 
-             url: Alfresco.constants.PROXY_URI + "deal/create",
-             dataObj: {
-                car : dialogData.car,
-                model: dialogData.model,
-                cost : dialogData.cost,
-                seller: dialogData.seller,
-                customer: dialogData.customer
-             },
-          successCallback: {fn: handleSuccess, scope: YAHOO.ionkin.container.addDealDialog},
-          failureCallback: {fn: handleFailure, scope: YAHOO.ionkin.container.addDealDialog}
-        });
-        YAHOO.ionkin.container.addDealDialog.hide();
+            YAHOO.ionkin.container.addDealDialog.hide();
+        }
     };
 
     // Remove progressively enhanced content class, just before creating the module

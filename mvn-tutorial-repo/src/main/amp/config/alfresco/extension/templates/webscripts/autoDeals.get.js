@@ -2,7 +2,7 @@ function main() {
     var doc,
         docsInfo,
         docsInfoJson,
-        docs = search.luceneSearch("TYPE:\"ad:autoDealOperation\" and PATH:\"/app:company_home/cm:Test/*\""),
+        docs = search.luceneSearch("TYPE:\"ad:autoDealOperation\" AND PATH:\"/app:company_home/cm:Test/*\""),
         car = "",
         i = 0,
         sellerName = "",

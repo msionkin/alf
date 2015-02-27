@@ -1,0 +1,1 @@
+<p>Has been deleted!</p>

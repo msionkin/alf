@@ -1,0 +1,7 @@
+<webscript>
+    <shortname>delete auto deal</shortname>
+    <description>delete auto deal</description>
+    <url>/deal/delete</url>
+    <format default="json" />
+    <authentication>user</authentication>
+</webscript>
