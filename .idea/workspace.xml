@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed74c4fc-93a8-4159-b9da-bd924541c550" name="Default" comment="createAutoDeal post json work">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/deleteAutoDeal.delete.desc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/deleteAutoDeal.delete.json.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/deleteAutoDeal.delete.json.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.js" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.js" />
+      <change type="MOVED" beforePath="C:\Users\mionkin\Documents\gitHub\alf\mvn-tutorial-repo\src\main\amp\config\alfresco\extension\templates\webscripts\deleteAutoDeal.delete.desc.xml" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/deleteAutoDeal.post.desc.xml" />
+      <change type="MOVED" beforePath="C:\Users\mionkin\Documents\gitHub\alf\mvn-tutorial-repo\src\main\amp\config\alfresco\extension\templates\webscripts\deleteAutoDeal.delete.json.ftl" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/deleteAutoDeal.post.json.ftl" />
+      <change type="MOVED" beforePath="C:\Users\mionkin\Documents\gitHub\alf\mvn-tutorial-repo\src\main\amp\config\alfresco\extension\templates\webscripts\deleteAutoDeal.delete.json.js" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/deleteAutoDeal.post.json.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js" afterPath="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/home-page-min.js" afterPath="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/home-page-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/config/alfresco/web-extension/site-webscripts/home-page.get.html.ftl" afterPath="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/config/alfresco/web-extension/site-webscripts/home-page.get.html.ftl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/home-page.js" afterPath="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/home-page.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/newDeal-min.js" afterPath="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/newDeal-min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/newDeal.js" afterPath="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/newDeal.js" />
@@ -46,8 +45,28 @@
       <file leaf-file-name="alfresco.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/js/alfresco.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39887005" vertical-offset="116590" max-vertical-offset="200685">
-              <caret line="6879" column="30" selection-start-line="6879" selection-start-column="30" selection-end-line="6879" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.49182242" vertical-offset="18755" max-vertical-offset="200685">
+              <caret line="1128" column="69" selection-start-line="1128" selection-start-column="69" selection-end-line="1128" selection-end-column="69" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="start-workflow.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/workflow/start-workflow.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2927" max-vertical-offset="3825">
+              <caret line="138" column="8" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workflow-form.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/workflow/workflow-form.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="9638" max-vertical-offset="10523">
+              <caret line="604" column="16" selection-start-line="604" selection-start-column="16" selection-end-line="604" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -61,10 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/module/mvn-tutorial-repo/model/autoDeal.xml" />
-        <option value="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/autoDeals.get.js" />
-        <option value="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js" />
-        <option value="$PROJECT_DIR$/mvn-tutorial-repo/pom.xml" />
         <option value="$PROJECT_DIR$/mvn-tutorial-repo/src/test/java/org/alfresco/demoamp/test/DemoComponentTest.java" />
         <option value="$PROJECT_DIR$/mvn-tutorial-share/pom.xml" />
         <option value="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/WEB-INF/classes/alfresco/templates/org/alfresco/calendar.ftl" />
@@ -83,7 +98,6 @@
         <option value="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/config/alfresco/web-extension/site-data/template-instances/home-page.xml" />
         <option value="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/WEB-INF/classes/alfresco/templates/org/alfresco/repository.ftl" />
         <option value="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/config/alfresco/web-extension/templates/org/ionkin/my-template.ftl" />
-        <option value="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml" />
         <option value="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/config/alfresco/web-extension/site-webscripts/home-page.get.js" />
         <option value="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/home-page.get.js" />
         <option value="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/file-mapping.properties" />
@@ -94,13 +108,9 @@
         <option value="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/WEB-INF/classes/alfresco/web-extension/site-webscripts/home-page.get.html.ftl" />
         <option value="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/ionkin/newDeal.js" />
         <option value="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js" />
-        <option value="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js" />
         <option value="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share/config/alfresco/web-extension/site-webscripts/home-page.get.html.ftl" />
         <option value="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/config/alfresco/web-extension/site-webscripts/home-page.get.html.ftl" />
         <option value="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/ionkin/home-page.js" />
-        <option value="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/ionkin/newDeal-min.js" />
-        <option value="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/newDeal-min.js" />
-        <option value="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/js/alfresco.js" />
         <option value="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/deleteAutoDeal.delete.json.ftl" />
         <option value="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/deleteAutoDeal.delete.json.ftl" />
         <option value="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/deleteAutoDeal.delete.json.js" />
@@ -108,10 +118,19 @@
         <option value="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.js" />
         <option value="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/deleteAutoDeal.delete.desc.xml" />
         <option value="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/deleteAutoDeal.delete.desc.xml" />
-        <option value="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/ionkin/home-page-min.js" />
-        <option value="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/home-page-min.js" />
-        <option value="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/home-page.js" />
+        <option value="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/js/alfresco.js" />
+        <option value="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/deleteAutoDeal.post.json.js" />
+        <option value="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/deleteAutoDeal.post.json.js" />
+        <option value="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml" />
+        <option value="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml" />
+        <option value="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/ionkin/newDeal-min.js" />
+        <option value="$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js" />
+        <option value="$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js" />
         <option value="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/newDeal.js" />
+        <option value="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/newDeal-min.js" />
+        <option value="$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/ionkin/home-page-min.js" />
+        <option value="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/home-page.js" />
+        <option value="$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/home-page-min.js" />
       </list>
     </option>
   </component>
@@ -214,8 +233,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -336,7 +353,61 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvn-tutorial-share" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvn-tutorial-share-war" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="springframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="surf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -366,7 +437,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ionkin" />
+              <option name="myItemId" value="workflow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvn-tutorial-share" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="target" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvn-tutorial-share-war" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -706,24 +803,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvn-tutorial-repo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -807,6 +886,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="alfresco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvn-tutorial-repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvn-tutorial-repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="amp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="alfresco" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvn-tutorial-repo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -858,6 +991,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1178,12 +1313,12 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5437838" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22707888" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23187633" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49568033" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32864866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18336888" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23187633" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1227,6 +1362,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/js/alfresco.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="200685">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/home-page-min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="833">
@@ -1247,7 +1390,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="289">
           <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1318,106 +1460,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/config/alfresco/web-extension/site-webscripts/home-page.get.desc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/config/alfresco/web-extension/templates/org/ionkin/my-template.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.56792873" vertical-offset="0" max-vertical-offset="898">
           <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/config/alfresco/web-extension/site-data/template-instances/home-page.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2650334" vertical-offset="0" max-vertical-offset="898">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/config/alfresco/web-extension/site-data/pages/home-page.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17037863" vertical-offset="0" max-vertical-offset="898">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share/config/alfresco/web-extension/site-webscripts/home-page.get.html.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
-          <caret line="35" column="19" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/ionkin/home-page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88641423" vertical-offset="88" max-vertical-offset="986">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/documentlibrary/actions/document-delete-16.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/documentlibrary/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.6331775" vertical-offset="9405" max-vertical-offset="31909">
-          <caret line="471" column="15" selection-start-line="471" selection-start-column="9" selection-end-line="471" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.json.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15144767" vertical-offset="0" max-vertical-offset="898">
-          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/ionkin/newDeal-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="898">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1548975" vertical-offset="0" max-vertical-offset="629">
-          <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35634744" vertical-offset="258" max-vertical-offset="1156">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/ionkin/home-page-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8106904" vertical-offset="513" max-vertical-offset="1479">
-          <caret line="73" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1429,15 +1475,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml">
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.ftl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07744875" vertical-offset="0" max-vertical-offset="439">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="898">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.json.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.309795" vertical-offset="0" max-vertical-offset="439">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/config/alfresco/web-extension/site-data/pages/home-page.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34851936" vertical-offset="0" max-vertical-offset="439">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/deleteAutoDeal.delete.desc.xml">
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/config/alfresco/web-extension/site-data/template-instances/home-page.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54214126" vertical-offset="0" max-vertical-offset="439">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/config/alfresco/web-extension/site-webscripts/home-page.get.desc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="897">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/config/alfresco/web-extension/site-webscripts/home-page.get.html.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31690142" vertical-offset="256" max-vertical-offset="748">
+          <caret line="23" column="81" selection-start-line="23" selection-start-column="81" selection-end-line="23" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/deleteAutoDeal.post.json.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11358575" vertical-offset="0" max-vertical-offset="898">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/deleteAutoDeal.post.desc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.075723834" vertical-offset="0" max-vertical-offset="898">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/deleteAutoDeal.post.json.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/module/mvn-tutorial-repo/model/autoDeal.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/autoDeals.get.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3975501" vertical-offset="0" max-vertical-offset="898">
+          <caret line="21" column="64" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/target/mvn-tutorial-repo-war/WEB-INF/classes/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1751">
+          <caret line="67" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="97" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.desc.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
           <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
@@ -1445,66 +1579,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/deleteAutoDeal.delete.json.ftl">
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/createAutoDeal.post.json.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/deleteAutoDeal.delete.json.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19362187" vertical-offset="0" max-vertical-offset="439">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/config/alfresco/web-extension/site-webscripts/home-page.get.html.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43541202" vertical-offset="0" max-vertical-offset="898">
-          <caret line="23" column="81" selection-start-line="23" selection-start-column="81" selection-end-line="23" selection-end-column="81" />
-          <folding />
+        <state vertical-scroll-proportion="1.7416481" vertical-offset="0" max-vertical-offset="1717">
+          <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/newDeal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2494432" vertical-offset="0" max-vertical-offset="1224">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/home-page-min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54899776" vertical-offset="357" max-vertical-offset="1479">
-          <caret line="50" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/home-page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.96213806" vertical-offset="513" max-vertical-offset="1479">
+        <state vertical-scroll-proportion="0.0" vertical-offset="543" max-vertical-offset="1479">
           <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/ionkin/newDeal-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36610168" vertical-offset="594" max-vertical-offset="1479">
+          <caret line="54" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-repo/src/main/amp/config/alfresco/extension/templates/webscripts/deleteAutoDeal.post.json.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27107063" vertical-offset="0" max-vertical-offset="439">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/newDeal-min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64365256" vertical-offset="0" max-vertical-offset="1224">
-          <caret line="34" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1479">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="11" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/home-page-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9242762" vertical-offset="785" max-vertical-offset="1717">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/src/main/amp/web/components/ionkin/home-page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9242762" vertical-offset="785" max-vertical-offset="1717">
+          <caret line="95" column="0" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/ionkin/home-page-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03452116" vertical-offset="819" max-vertical-offset="1717">
+          <caret line="50" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/workflow/start-workflow-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/workflow/workflow-actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.1276836" vertical-offset="4538" max-vertical-offset="5423">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/workflow/workflow-details-header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="898">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/workflow/workflow-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.918644" vertical-offset="3468" max-vertical-offset="5134">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/workflow/task-details-actions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1322033" vertical-offset="1002" max-vertical-offset="1887">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/workflow/task-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4981">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/workflow/workflow-form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9638" max-vertical-offset="10523">
+          <caret line="604" column="16" selection-start-line="604" selection-start-column="16" selection-end-line="604" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/components/workflow/start-workflow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2927" max-vertical-offset="3825">
+          <caret line="138" column="8" selection-start-line="138" selection-start-column="8" selection-end-line="138" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mvn-tutorial-share/target/mvn-tutorial-share-war/js/alfresco.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39887005" vertical-offset="116590" max-vertical-offset="200685">
-          <caret line="6879" column="30" selection-start-line="6879" selection-start-column="30" selection-end-line="6879" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.49182242" vertical-offset="18755" max-vertical-offset="200685">
+          <caret line="1128" column="69" selection-start-line="1128" selection-start-column="69" selection-end-line="1128" selection-end-column="69" />
           <folding />
         </state>
       </provider>

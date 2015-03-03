@@ -46,6 +46,16 @@ YAHOO.example.XHR_JSON = function() {
    myDataTable = new YAHOO.widget.DataTable("deals-table", myColumnDefs, myDataSource);
 
    myDataTable.subscribe("buttonClickEvent", function(oArgs){
+
+        function deleteSuccess() {
+            console.log("deal has been deleted")
+            window.location.reload();
+        }
+
+        function deleteFailure(e) {
+            alert("Delete failed: " + e.json.message );
+        }
+
        oRecord = this.getRecord(oArgs.target);
        if (oArgs.target.value == "edit") {
             var i = 0,
@@ -64,15 +74,19 @@ YAHOO.example.XHR_JSON = function() {
                      dealFormElements[i].value = oRecord._oData.customer;
                 }
             }
+            YAHOO.ionkin.container.addDealDialog.dealNameForEditing = oRecord._oData.name;
+            YAHOO.ionkin.container.addDealDialog.isThisDealForEditing = true;
             YAHOO.ionkin.container.addDealDialog.show();
 
        } else if (oArgs.target.value == "delete") {
-             Alfresco.util.Ajax.jsonDelete({
-                method: Alfresco.util.Ajax.DELETE,
+             Alfresco.util.Ajax.jsonPost({
+                method: Alfresco.util.Ajax.POST,
                 url: Alfresco.constants.PROXY_URI +"deal/delete",
                 dataObj: {
                     dealName: oRecord._oData.name
-                }
+                },
+                successCallback: {fn: deleteSuccess, scope: YAHOO.ionkin.container.addDealDialog},
+                failureCallback: {fn: deleteFailure, scope: YAHOO.ionkin.container.addDealDialog}
              });
        }
    });

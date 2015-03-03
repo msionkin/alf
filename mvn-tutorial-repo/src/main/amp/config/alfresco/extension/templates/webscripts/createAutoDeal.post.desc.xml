@@ -1,6 +1,7 @@
 <webscript>
     <shortname>create new auto deal</shortname>
     <url>/deal/create</url>
+    <url>/deal/create/update</url>
     <format default="json" />
     <authentication>user</authentication>
 </webscript>

@@ -6,6 +6,7 @@ YAHOO.util.Event.onDOMReady(function () {
 	};
 
     var pushDataToRepository = function () {
+
         var handleSuccess = function() {
          console.log("new deal has been added")
          window.location.reload();
@@ -15,11 +16,18 @@ YAHOO.util.Event.onDOMReady(function () {
      	    alert("Submission failed: " + e.json.message );
         };
 
+        var urlForDeal = Alfresco.constants.PROXY_URI + "deal/create";
+
+        if (YAHOO.ionkin.container.addDealDialog.isThisDealForEditing === true) {
+            urlForDeal += "/update";
+        }
+
         dialogData = YAHOO.ionkin.container.addDealDialog.getData();
         if (YAHOO.ionkin.container.addDealDialog.validate()) {
             Alfresco.util.Ajax.jsonPost({
-                 url: Alfresco.constants.PROXY_URI + "deal/create",
+                 url: urlForDeal,
                  dataObj: {
+                    dealNameForEditing: YAHOO.ionkin.container.addDealDialog.dealNameForEditing,
                     car : dialogData.car,
                     model: dialogData.model,
                     cost : dialogData.cost,
@@ -61,6 +69,13 @@ YAHOO.util.Event.onDOMReady(function () {
 	// Render the Dialog
 	YAHOO.ionkin.container.addDealDialog.render();
 
-	YAHOO.util.Event.addListener("addNewDeal", "click", YAHOO.ionkin.container.addDealDialog.show, YAHOO.ionkin.container.addDealDialog, true);
+	YAHOO.util.Event.addListener("addNewDeal",
+	                                "click",
+	                                function() {
+                                        YAHOO.ionkin.container.addDealDialog.isThisDealForEditing = false;
+                                        YAHOO.ionkin.container.addDealDialog.show();
+                                    },
+                                    YAHOO.ionkin.container.addDealDialog,
+                                    true);
 });
 
