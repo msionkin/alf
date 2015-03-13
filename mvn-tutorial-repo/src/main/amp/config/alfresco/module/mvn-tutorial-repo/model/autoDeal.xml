@@ -1,4 +1,6 @@
-<model name="ad:autodealmodel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+<model name="ad:autodealmodel"
+       xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
     <description>Auto Deal Model</description>
     <author>MSI</author>
     <version>1.0</version>

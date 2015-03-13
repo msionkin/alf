@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Definition of new Model -->
+<model name="adwf:autodealworkflowmodel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Optional meta-data about the model -->
+    <description>Auto Deal Workflow Model</description>
+    <author>Ionkin M S</author>
+    <version>1.0</version>
+
+    <!-- Imports are required to allow references to definitions in other models -->
+    <imports>
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d" />
+        <import uri="http://www.alfresco.org/model/bpm/1.0" prefix="bpm" />
+    </imports>
+
+    <!-- Introduction of new namespaces defined by this model -->
+    <namespaces>
+        <namespace uri="http://www.someco.com/automodel/workflow/1.0" prefix="adwf" />
+    </namespaces>
+
+
+    <types>
+       <type name="adwf:automobileSelection">
+         <parent>bpm:startTask</parent>
+           <mandatory-aspects>
+               <aspect>adwf:automobileSelectionAspect</aspect>
+           </mandatory-aspects>
+       </type>
+
+       <type name="adwf:sellerCheckFormKey">
+           <parent>bpm:workflowTask</parent>
+
+           <mandatory-aspects>
+               <aspect>adwf:automobileSelectionAspect</aspect>
+               <aspect>adwf:carCostAspect</aspect>
+           </mandatory-aspects>
+       </type>
+
+
+
+       <type name="adwf:billConfirmFormKey">
+           <parent>bpm:activitiOutcomeTask</parent>
+           <properties>
+               <property name="adwf:approveRejectOutcome">
+                   <type>d:text</type>
+                   <default>Approve</default>
+                   <constraints>
+                       <constraint type="LIST" name="adwf:approveRejectOutcomeConstraint">
+                           <parameter name="allowedValues">
+                               <list>
+                                   <value>Approve</value>
+                                   <value>Reject</value>
+                               </list>
+                           </parameter>
+                       </constraint>
+                   </constraints>
+               </property>
+           </properties>
+
+           <overrides>
+               <property name="bpm:outcomePropertyName">
+                   <default>{http://www.someco.com/automodel/workflow/1.0}approveRejectOutcome</default>
+               </property>
+           </overrides>
+
+           <mandatory-aspects>
+               <aspect>adwf:automobileSelectionAspect</aspect>
+               <aspect>adwf:carCostAspect</aspect>
+           </mandatory-aspects>
+       </type>
+
+       <type name="adwf:accountingApprovalFormKey">
+           <parent>bpm:workflowTask</parent>
+           <properties>
+               <property name="adwf:billNumber">
+                   <type>d:long</type>
+                   <mandatory>true</mandatory>
+                   <multiple>false</multiple>
+               </property>
+           </properties>
+
+           <mandatory-aspects>
+               <aspect>adwf:automobileSelectionAspect</aspect>
+               <aspect>adwf:carCostAspect</aspect>
+           </mandatory-aspects>
+       </type>
+    </types>
+
+    <aspects>
+        <aspect name="adwf:automobileSelectionAspect">
+            <title>Automobile Selection</title>
+            <properties>
+                <property name="adwf:carSelection">
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <multiple>false</multiple>
+                </property>
+                <property name="adwf:modelSelection">
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <multiple>false</multiple>
+                </property>
+            </properties>
+        </aspect>
+
+        <aspect name="adwf:carCostAspect">
+            <title>Car Cost</title>
+            <properties>
+                <property name="adwf:carCost">
+                    <type>d:float</type>
+                    <mandatory>true</mandatory>
+                    <multiple>false</multiple>
+                </property>
+            </properties>
+        </aspect>
+    </aspects>
+ </model>

@@ -1,0 +1,141 @@
+<alfresco-config>
+    <config evaluator="string-compare" condition="activiti$helloWorldUI">
+        <forms>
+            <form>
+                <field-visibility>
+                    <show id="bpm:workflowDescription" />
+                    <show id="packageItems" />
+                    <show id="scwf:helloName" />
+                    <show id="transitions" />
+                    <show id="bpm:status" />
+                </field-visibility>
+                <appearance>
+                    <set id="" appearance="title" label-id="workflow.set.general" />
+                    <set id="items" appearance="title" label-id="workflow.set.items" />
+                    <set id="progress" appearance="title" label-id="workflow.set.task.progress" />
+                    <set id="other" appearance="title" label-id="workflow.set.other" />
+                    <field id="bpm:workflowDescription" label-id="workflow.field.message">
+                        <control template="/org/alfresco/components/form/controls/textarea.ftl">
+                            <control-param name="style">width: 95%</control-param>
+                        </control>
+                    </field>
+                    <field id="packageItems" set="items" />
+                    <field id="scwf:helloName" set="other" />
+                    <field id="bpm:status" set="progress" />
+                </appearance>
+            </form>
+        </forms>
+    </config>
+
+
+    <config evaluator="string-compare" condition="activiti$autoDealWF">
+        <forms>
+            <form>
+                <field-visibility>
+                    <show id="bpm:status" />
+                    <show id="bpm:workflowDescription" />
+                    <show id="adwf:carSelection" />
+                    <show id="adwf:modelSelection" />
+                    <show id="transitions" />
+
+                </field-visibility>
+                <appearance>
+                    <set id="" appearance="title" label-id="workflow.set.general" />
+                    <set id="progress" appearance="title" label-id="workflow.set.task.progress" />
+                    <set id="response" appearance="title" label-id="workflow.set.response" />
+                    <set id="other" appearance="title" label-id="workflow.set.other" />
+                    <field id="bpm:workflowDescription" label-id="workflow.field.message">
+                        <control template="/org/alfresco/components/form/controls/textarea.ftl">
+                            <control-param name="style">width: 95%</control-param>
+                        </control>
+                    </field>
+                    <field id="adwf:carSelection" set="other" />
+                    <field id="adwf:modelSelection" set="other" />
+                    <field id="bpm:status" set="progress" />
+                    <field id="transitions" set="response" />
+                </appearance>
+            </form>
+        </forms>
+    </config>
+
+    <config evaluator="task-type" condition="adwf:sellerCheckFormKey">
+        <forms>
+            <form>
+                <field-visibility>
+                    <show id="adwf:carSelection" />
+                    <show id="adwf:modelSelection" />
+                    <show id="adwf:carCost" />
+                    <show id="transitions" />
+                </field-visibility>
+
+                <appearance>
+                    <set id="" appearance="title" label-id="workflow.set.general" />
+                    <set id="progress" appearance="title" label-id="workflow.set.task.progress" />
+                    <set id="other" appearance="title" label-id="workflow.set.other" />
+                    <set id="response" appearance="title" label-id="workflow.set.response" />
+
+                    <field id="adwf:carSelection" set="other" read-only="true" />
+                    <field id="adwf:modelSelection" set="other" read-only="true" />
+                    <field id="adwf:carCost" set="other" />
+                    <field id="transitions" set="response" />
+                </appearance>
+            </form>
+        </forms>
+    </config>
+
+    <config evaluator="task-type" condition="adwf:billConfirmFormKey">
+        <forms>
+            <form>
+                <field-visibility>
+                    <show id="bpm:status" />
+                    <show id="adwf:carSelection" />
+                    <show id="adwf:modelSelection" />
+                    <show id="adwf:carCost" />
+                    <show id="adwf:approveRejectOutcome" />
+                </field-visibility>
+
+                <appearance>
+                    <set id="" appearance="title" label-id="workflow.set.general" />
+                    <set id="progress" appearance="title" label-id="workflow.set.task.progress" />
+                    <set id="other" appearance="title" label-id="workflow.set.other" />
+                    <set id="response" appearance="title" label-id="workflow.set.response" />
+
+                    <field id="adwf:carSelection" set="other" read-only="true" />
+                    <field id="adwf:modelSelection" set="other" read-only="true" />
+                    <field id="adwf:carCost" set="other" read-only="true" />
+                    <field id="bpm:status" set="progress" />
+                    <field id="adwf:approveRejectOutcome" set="response" >
+                        <control template="/org/alfresco/components/form/controls/workflow/activiti-transitions.ftl" />
+                    </field>
+                </appearance>
+            </form>
+        </forms>
+    </config>
+
+    <config evaluator="task-type" condition="adwf:accountingApprovalFormKey">
+        <forms>
+            <form>
+                <field-visibility>
+                    <show id="adwf:carSelection" />
+                    <show id="adwf:modelSelection" />
+                    <show id="adwf:carCost" />
+                    <show id="adwf:billNumber" />
+                    <show id="transitions" />
+                </field-visibility>
+
+                <appearance>
+                    <set id="" appearance="title" label-id="workflow.set.general" />
+                    <set id="progress" appearance="title" label-id="workflow.set.task.progress" />
+                    <set id="other" appearance="title" label-id="workflow.set.other" />
+                    <set id="response" appearance="title" label-id="workflow.set.response" />
+
+                    <field id="adwf:carSelection" set="other" read-only="true" />
+                    <field id="adwf:modelSelection" set="other" read-only="true" />
+                    <field id="adwf:carCost" set="other" read-only="true"/>
+                    <field id="adwf:billNumber" set="other" />
+                    <field id="transitions" set="response" />
+                </appearance>
+            </form>
+        </forms>
+    </config>
+</alfresco-config>
