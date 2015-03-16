@@ -17,10 +17,12 @@
         <activiti:field name="script">
           <activiti:string><![CDATA[var mail = actions.create("mail");
 																		mail.parameters.to = "mionkin@mirantis.com";
-																		mail.parameters.subject = "send a workflow's email. test! " + bpm_workflowDescription;
-																		mail.parameters.from = "mionkin@mirantis.com";
+																		mail.parameters.subject = "send a workflow's email. test! ";
+																		//mail.parameters.from = "mionkin@mirantis.com";
 																		mail.parameters.text = "Test message! ";
-																		//mail.execute(bpm_package);]]></activiti:string>
+																		mail.execute(companyhome);
+																		]]>
+					</activiti:string>
         </activiti:field>
       </extensionElements>
 		</serviceTask>
@@ -45,12 +47,10 @@
       <conditionExpression xsi:type="tFormalExpression"><![CDATA[${adwf_approveRejectOutcome == 'Approve'}]]></conditionExpression>
     </sequenceFlow>
     <serviceTask activiti:class="org.alfresco.repo.workflow.activiti.script.AlfrescoScriptDelegate" activiti:exclusive="true" id="nodeCreating" name="Node Creating">
-			<extensionElements>
-        <activiti:taskListener class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener" event="complete">
+			<extensionElements>      
           <activiti:field name="script">
-            <activiti:string>"Helloe"</activiti:string>
-          </activiti:field>
-        </activiti:taskListener>
+            <activiti:string><![CDATA[<import resource="/createAutoDealFromWorkflow.js">]]></activiti:string>
+          </activiti:field>      
       </extensionElements>
 		</serviceTask>
     <sequenceFlow id="_19" sourceRef="accountingApproval" targetRef="nodeCreating"/>
