@@ -1,4 +1,4 @@
-function main() {
+function createAutoDealFromWorkflow() {
     var car = "",
         model = "",
         cost = 0,
@@ -24,9 +24,9 @@ function main() {
         testFolder = companyhome.createFolder("Test");
     }
 
-    car = task.getVariable('adwf_carSelection');
-    model = task.getVariable('adwf_modelSelection');
-    cost = task.getVariable('adwf_carCost');
+    car = adwf_carSelection;
+    model = adwf_modelSelection;
+    cost = adwf_carCost;
     sellerUserName = "admin";
     customerUserName = "admin";
 
@@ -56,5 +56,3 @@ function main() {
         }
     }
 }
-
-main();

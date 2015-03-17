@@ -3,17 +3,17 @@
   <process id="autoDealWF" isClosed="false" isExecutable="true" name="Auto Deal Workflow" processType="None">
     <startEvent activiti:formKey="adwf:automobileSelection" id="customerRequest" name="Customer Request"/>
     <endEvent id="EndEvent1" name="EndEvent"/>
-    <userTask activiti:exclusive="true" activiti:formKey="adwf:sellerCheckFormKey" id="sellerCheck" name="Seller check">	
-			<extensionElements>
-        <activiti:taskListener event="complete" class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener">
-            <activiti:field name="script">
-                <activiti:string>execution.setVariable('adwf_carCost', task.getVariable('adwf_carCost'));</activiti:string>
-            </activiti:field>
+    <userTask activiti:assignee="${initiator.properties.userName}" activiti:candidateGroups="GROUP_seller" activiti:exclusive="true" activiti:formKey="adwf:sellerCheckFormKey" id="sellerCheck" name="Seller check">
+      <extensionElements>
+        <activiti:taskListener class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener" event="complete">
+          <activiti:field name="script">
+            <activiti:string>execution.setVariable('adwf_carCost', task.getVariable('adwf_carCost'));</activiti:string>
+          </activiti:field>
         </activiti:taskListener>
-			</extensionElements>
-		</userTask>
-		<serviceTask activiti:class="org.alfresco.repo.workflow.activiti.script.AlfrescoScriptDelegate" activiti:exclusive="true" id="sendEmail" name="Send email">
-			<extensionElements>
+      </extensionElements>
+    </userTask>
+    <serviceTask activiti:class="org.alfresco.repo.workflow.activiti.script.AlfrescoScriptDelegate" activiti:exclusive="true" id="sendEmail" name="Send email">
+      <extensionElements>
         <activiti:field name="script">
           <activiti:string><![CDATA[var mail = actions.create("mail");
 																		mail.parameters.to = "mionkin@mirantis.com";
@@ -21,42 +21,41 @@
 																		//mail.parameters.from = "mionkin@mirantis.com";
 																		mail.parameters.text = "Test message! ";
 																		mail.execute(companyhome);
-																		]]>
-					</activiti:string>
+																		]]></activiti:string>
         </activiti:field>
       </extensionElements>
-		</serviceTask>
-    
-    <userTask activiti:async="false" activiti:exclusive="true" activiti:formKey="adwf:billConfirmFormKey" id="billConfirm" name="Bill Confirm">
-			<extensionElements>
-        <activiti:taskListener event="complete" class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener">
-            <activiti:field name="script">
-                <activiti:string>execution.setVariable('adwf_approveRejectOutcome', task.getVariable('adwf_approveRejectOutcome'));</activiti:string>
-            </activiti:field>
+    </serviceTask>
+    <userTask activiti:assignee="${initiator.properties.userName}" activiti:async="false" activiti:candidateGroups="GROUP_customer" activiti:exclusive="true" activiti:formKey="adwf:billConfirmFormKey" id="billConfirm" name="Bill Confirm">
+      <extensionElements>
+        <activiti:taskListener class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener" event="complete">
+          <activiti:field name="script">
+            <activiti:string>execution.setVariable('adwf_approveRejectOutcome', task.getVariable('adwf_approveRejectOutcome'));</activiti:string>
+          </activiti:field>
         </activiti:taskListener>
-    </extensionElements>
-		</userTask>
+      </extensionElements>
+    </userTask>
     <exclusiveGateway gatewayDirection="Unspecified" id="isConfirmed" name="Is Confirmed"/>
-		<sequenceFlow id="_2" sourceRef="customerRequest" targetRef="sellerCheck"/>
+    <sequenceFlow id="_2" sourceRef="customerRequest" targetRef="sellerCheck"/>
     <sequenceFlow id="_13" sourceRef="billConfirm" targetRef="isConfirmed"/>
     <sequenceFlow id="_14" sourceRef="isConfirmed" targetRef="EndEvent1">
       <conditionExpression xsi:type="tFormalExpression"><![CDATA[${adwf_approveRejectOutcome == 'Reject'}]]></conditionExpression>
     </sequenceFlow>
-    <userTask activiti:exclusive="true" activiti:formKey="adwf:accountingApprovalFormKey" id="accountingApproval" name="Accounting Approval"/>
+    <userTask activiti:assignee="${initiator.properties.userName}" activiti:candidateGroups="GROUP_accounting" activiti:exclusive="true" activiti:formKey="adwf:accountingApprovalFormKey" id="accountingApproval" name="Accounting Approval"/>
     <sequenceFlow id="_16" sourceRef="isConfirmed" targetRef="accountingApproval">
       <conditionExpression xsi:type="tFormalExpression"><![CDATA[${adwf_approveRejectOutcome == 'Approve'}]]></conditionExpression>
     </sequenceFlow>
-    <serviceTask activiti:class="org.alfresco.repo.workflow.activiti.script.AlfrescoScriptDelegate" activiti:exclusive="true" id="nodeCreating" name="Node Creating">
-			<extensionElements>      
-          <activiti:field name="script">
-            <activiti:string><![CDATA[<import resource="/createAutoDealFromWorkflow.js">]]></activiti:string>
-          </activiti:field>      
-      </extensionElements>
-		</serviceTask>
-    <sequenceFlow id="_19" sourceRef="accountingApproval" targetRef="nodeCreating"/>
-    <sequenceFlow id="_20" sourceRef="nodeCreating" targetRef="EndEvent1"/>
     <sequenceFlow id="_7" sourceRef="sellerCheck" targetRef="sendEmail"/>
     <sequenceFlow id="_8" sourceRef="sendEmail" targetRef="billConfirm"/>
+    <serviceTask activiti:class="org.alfresco.repo.workflow.activiti.script.AlfrescoScriptDelegate" activiti:exclusive="true" id="nodeCreating" name="Node Creating">
+      <extensionElements>
+        <activiti:field name="script">
+          <activiti:string><![CDATA[<import resource="classpath:alfresco/extension/templates/webscripts/createAutoDealFromWorkflow.js">
+																			createAutoDealFromWorkflow();]]></activiti:string>
+        </activiti:field>
+      </extensionElements>
+    </serviceTask>
+    <sequenceFlow id="_5" sourceRef="accountingApproval" targetRef="nodeCreating"/>
+    <sequenceFlow id="_6" sourceRef="nodeCreating" targetRef="EndEvent1"/>
   </process>
   <bpmndi:BPMNDiagram documentation="background=#FFFFFF;count=1;horizontalcount=1;orientation=0;width=842.4;height=1195.2;imageableWidth=832.4;imageableHeight=1185.2;imageableX=5.0;imageableY=5.0" id="Diagram-_1" name="New Diagram">
     <bpmndi:BPMNPlane bpmnElement="autoDealWF">
@@ -87,7 +86,7 @@
       <bpmndi:BPMNShape bpmnElement="isConfirmed" id="Shape-isConfirmed" isMarkerVisible="false">
         <omgdc:Bounds height="32.0" width="32.0" x="830.0" y="320.0"/>
         <bpmndi:BPMNLabel>
-          <omgdc:Bounds height="32.0" width="32.0" x="2.0" y="2.0"/>
+          <omgdc:Bounds height="32.0" width="32.0" x="0.0" y="0.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="accountingApproval" id="Shape-accountingApproval">
@@ -96,14 +95,14 @@
           <omgdc:Bounds height="55.0" width="85.0" x="0.0" y="0.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape bpmnElement="nodeCreating" id="Shape-nodeCreating">
-        <omgdc:Bounds height="55.0" width="85.0" x="980.0" y="175.0"/>
+      <bpmndi:BPMNShape bpmnElement="sendEmail" id="Shape-sendEmail">
+        <omgdc:Bounds height="55.0" width="85.0" x="500.0" y="430.0"/>
         <bpmndi:BPMNLabel>
           <omgdc:Bounds height="55.0" width="85.0" x="0.0" y="0.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape bpmnElement="sendEmail" id="Shape-sendEmail">
-        <omgdc:Bounds height="55.0" width="85.0" x="500.0" y="430.0"/>
+      <bpmndi:BPMNShape bpmnElement="nodeCreating" id="Shape-nodeCreating">
+        <omgdc:Bounds height="55.0" width="85.0" x="990.0" y="175.0"/>
         <bpmndi:BPMNLabel>
           <omgdc:Bounds height="55.0" width="85.0" x="0.0" y="0.0"/>
         </bpmndi:BPMNLabel>
@@ -129,16 +128,23 @@
           <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge bpmnElement="_19" id="BPMNEdge__19" sourceElement="accountingApproval" targetElement="nodeCreating">
-        <omgdi:waypoint x="890.0" y="202.5"/>
-        <omgdi:waypoint x="980.0" y="202.5"/>
+      <bpmndi:BPMNEdge bpmnElement="_2" id="BPMNEdge__2" sourceElement="customerRequest" targetElement="sellerCheck">
+        <omgdi:waypoint x="217.0" y="321.0"/>
+        <omgdi:waypoint x="345.0" y="457.5"/>
         <bpmndi:BPMNLabel>
           <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge bpmnElement="_2" id="BPMNEdge__2" sourceElement="customerRequest" targetElement="sellerCheck">
-        <omgdi:waypoint x="217.0" y="321.0"/>
-        <omgdi:waypoint x="345.0" y="457.5"/>
+      <bpmndi:BPMNEdge bpmnElement="_5" id="BPMNEdge__5" sourceElement="accountingApproval" targetElement="nodeCreating">
+        <omgdi:waypoint x="890.0" y="202.5"/>
+        <omgdi:waypoint x="990.0" y="202.5"/>
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_6" id="BPMNEdge__6" sourceElement="nodeCreating" targetElement="EndEvent1">
+        <omgdi:waypoint x="1070.0" y="230.0"/>
+        <omgdi:waypoint x="1070.0" y="329.38104996137776"/>
         <bpmndi:BPMNLabel>
           <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
         </bpmndi:BPMNLabel>
@@ -154,13 +160,6 @@
         <omgdi:waypoint x="585.0" y="457.5"/>
         <omgdi:waypoint x="615.0" y="395.0"/>
         <omgdi:waypoint x="660.0" y="337.5"/>
-        <bpmndi:BPMNLabel>
-          <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
-        </bpmndi:BPMNLabel>
-      </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge bpmnElement="_20" id="BPMNEdge__20" sourceElement="nodeCreating" targetElement="EndEvent1">
-        <omgdi:waypoint x="1022.5" y="230.0"/>
-        <omgdi:waypoint x="1081.0" y="325.0"/>
         <bpmndi:BPMNLabel>
           <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
         </bpmndi:BPMNLabel>
