@@ -3,11 +3,14 @@
   <process id="autoDealWF" isClosed="false" isExecutable="true" name="Auto Deal Workflow" processType="None">
     <startEvent activiti:formKey="adwf:automobileSelection" id="customerRequest" name="Customer Request"/>
     <endEvent id="EndEvent1" name="EndEvent"/>
-    <userTask activiti:assignee="${initiator.properties.userName}" activiti:candidateGroups="GROUP_seller" activiti:exclusive="true" activiti:formKey="adwf:sellerCheckFormKey" id="sellerCheck" name="Seller check">
+    <userTask activiti:candidateGroups="GROUP_sellers" activiti:exclusive="true" activiti:formKey="adwf:sellerCheckFormKey" id="sellerCheck" name="Seller check">
       <extensionElements>
         <activiti:taskListener class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener" event="complete">
           <activiti:field name="script">
-            <activiti:string>execution.setVariable('adwf_carCost', task.getVariable('adwf_carCost'));</activiti:string>
+            <activiti:string>
+							execution.setVariable('adwf_carCost', task.getVariable('adwf_carCost'));
+							execution.setVariable('adwf_sellerUsername', person.properties.userName);
+						</activiti:string>
           </activiti:field>
         </activiti:taskListener>
       </extensionElements>
@@ -25,7 +28,7 @@
         </activiti:field>
       </extensionElements>
     </serviceTask>
-    <userTask activiti:assignee="${initiator.properties.userName}" activiti:async="false" activiti:candidateGroups="GROUP_customer" activiti:exclusive="true" activiti:formKey="adwf:billConfirmFormKey" id="billConfirm" name="Bill Confirm">
+    <userTask activiti:assignee="${initiator.properties.userName}" activiti:async="false" activiti:exclusive="true" activiti:formKey="adwf:billConfirmFormKey" id="billConfirm" name="Bill Confirm">
       <extensionElements>
         <activiti:taskListener class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener" event="complete">
           <activiti:field name="script">
@@ -40,7 +43,7 @@
     <sequenceFlow id="_14" sourceRef="isConfirmed" targetRef="EndEvent1">
       <conditionExpression xsi:type="tFormalExpression"><![CDATA[${adwf_approveRejectOutcome == 'Reject'}]]></conditionExpression>
     </sequenceFlow>
-    <userTask activiti:assignee="${initiator.properties.userName}" activiti:candidateGroups="GROUP_accounting" activiti:exclusive="true" activiti:formKey="adwf:accountingApprovalFormKey" id="accountingApproval" name="Accounting Approval"/>
+    <userTask activiti:candidateGroups="GROUP_accountings" activiti:exclusive="true" activiti:formKey="adwf:accountingApprovalFormKey" id="accountingApproval" name="Accounting Approval"/>
     <sequenceFlow id="_16" sourceRef="isConfirmed" targetRef="accountingApproval">
       <conditionExpression xsi:type="tFormalExpression"><![CDATA[${adwf_approveRejectOutcome == 'Approve'}]]></conditionExpression>
     </sequenceFlow>

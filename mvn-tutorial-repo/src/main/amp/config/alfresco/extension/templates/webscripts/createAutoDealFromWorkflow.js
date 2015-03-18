@@ -27,8 +27,8 @@ function createAutoDealFromWorkflow() {
     car = adwf_carSelection;
     model = adwf_modelSelection;
     cost = adwf_carCost;
-    sellerUserName = "admin";
-    customerUserName = "admin";
+    sellerUserName = adwf_sellerUsername;
+    customerUserName = initiator.properties.userName;
 
     if (car == "" || model == "" || cost == 0 || sellerUserName == "" || customerUserName == "")
     {

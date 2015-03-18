@@ -30,6 +30,12 @@
        <type name="adwf:sellerCheckFormKey">
            <parent>bpm:workflowTask</parent>
 
+           <properties>
+               <property name="adwf:sellerUsername">
+                   <type>d:text</type>
+               </property>
+           </properties>
+
            <mandatory-aspects>
                <aspect>adwf:automobileSelectionAspect</aspect>
                <aspect>adwf:carCostAspect</aspect>
