@@ -1,5 +1,4 @@
 .idea/
-.idea/workspace.xml
 mvn-tutorial-repo/alf_data_dev/
 mvn-tutorial-repo/target/
 mvn-tutorial-repo/tomcat/
