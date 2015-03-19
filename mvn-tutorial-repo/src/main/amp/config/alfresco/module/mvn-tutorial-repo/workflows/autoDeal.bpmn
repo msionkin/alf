@@ -19,9 +19,9 @@
       <extensionElements>
         <activiti:field name="script">
           <activiti:string><![CDATA[var mail = actions.create("mail");
-																		mail.parameters.to = "mionkin@mirantis.com";
+																		mail.parameters.to = initiator.properties.email;
 																		mail.parameters.subject = "send a workflow's email. test! ";
-																		//mail.parameters.from = "mionkin@mirantis.com";
+																		mail.parameters.from = person.properties.email;
 																		mail.parameters.text = "Test message! ";
 																		mail.execute(companyhome);
 																		]]></activiti:string>
