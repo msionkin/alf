@@ -37,6 +37,13 @@
         <property name="models">
             <list>
                 <value>alfresco/module/${project.artifactId}/model/autoDeal.xml</value>
+                <value>alfresco/module/${project.artifactId}/model/autoDealWorkflowModel.xml</value>
+            </list>
+        </property>
+        <property name="labels">
+            <list>
+                <value>alfresco.module.${project.artifactId}.messages.autoDealWorkflow_en</value>
+                <value>alfresco.module.${project.artifactId}.messages.autoDealWorkflow_ru</value>
             </list>
         </property>
     </bean>

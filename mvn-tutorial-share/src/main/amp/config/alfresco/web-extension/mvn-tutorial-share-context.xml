@@ -5,9 +5,8 @@
     <bean id="mvn-tutorial-share_resources" class="org.springframework.extensions.surf.util.ResourceBundleBootstrapComponent">
         <property name="resourceBundles">
             <list>
-                <value>alfresco.web-extension.module.${project.artifactId}.messages.scWorkflow</value>
-
-                <value>alfresco.web-extension.module.${project.artifactId}.messages.autoDealWorkflow</value>
+                <value>alfresco.web-extension.module.${project.artifactId}.messages.autoDealWorkflow_en</value>
+                <value>alfresco.web-extension.module.${project.artifactId}.messages.autoDealWorkflow_ru</value>
             </list>
         </property>
     </bean>

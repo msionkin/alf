@@ -5,6 +5,13 @@
     <endEvent id="EndEvent1" name="EndEvent"/>
     <userTask activiti:candidateGroups="GROUP_sellers" activiti:exclusive="true" activiti:formKey="adwf:sellerCheckFormKey" id="sellerCheck" name="Seller check">
       <extensionElements>
+				<activiti:taskListener class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener" event="create">
+          <activiti:field name="script">
+            <activiti:string>
+							task.description = "Evaluate cost of " + task.getVariable('adwf_carSelection') + " " + task.getVariable('adwf_modelSelection');
+						</activiti:string>
+          </activiti:field>
+        </activiti:taskListener>
         <activiti:taskListener class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener" event="complete">
           <activiti:field name="script">
             <activiti:string>
@@ -24,12 +31,20 @@
 																		mail.parameters.from = person.properties.email;
 																		mail.parameters.text = "Test message! ";
 																		mail.execute(companyhome);
-																		]]></activiti:string>
+																		]]>
+					</activiti:string>
         </activiti:field>
       </extensionElements>
     </serviceTask>
     <userTask activiti:assignee="${initiator.properties.userName}" activiti:async="false" activiti:exclusive="true" activiti:formKey="adwf:billConfirmFormKey" id="billConfirm" name="Bill Confirm">
       <extensionElements>
+				<activiti:taskListener class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener" event="create">
+          <activiti:field name="script">
+            <activiti:string>
+							task.description = "Approve deal: " + task.getVariable('adwf_carSelection') + " " + task.getVariable('adwf_modelSelection') + "?";
+						</activiti:string>
+          </activiti:field>
+        </activiti:taskListener>
         <activiti:taskListener class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener" event="complete">
           <activiti:field name="script">
             <activiti:string>execution.setVariable('adwf_approveRejectOutcome', task.getVariable('adwf_approveRejectOutcome'));</activiti:string>
@@ -43,7 +58,17 @@
     <sequenceFlow id="_14" sourceRef="isConfirmed" targetRef="EndEvent1">
       <conditionExpression xsi:type="tFormalExpression"><![CDATA[${adwf_approveRejectOutcome == 'Reject'}]]></conditionExpression>
     </sequenceFlow>
-    <userTask activiti:candidateGroups="GROUP_accountings" activiti:exclusive="true" activiti:formKey="adwf:accountingApprovalFormKey" id="accountingApproval" name="Accounting Approval"/>
+    <userTask activiti:candidateGroups="GROUP_accountings" activiti:exclusive="true" activiti:formKey="adwf:accountingApprovalFormKey" id="accountingApproval" name="Accounting Approval">
+			<extensionElements>
+				<activiti:taskListener class="org.alfresco.repo.workflow.activiti.tasklistener.ScriptTaskListener" event="create">
+          <activiti:field name="script">
+            <activiti:string>
+							task.description = "Set bill number for " + task.getVariable('adwf_carSelection') + " " + task.getVariable('adwf_modelSelection');
+						</activiti:string>
+          </activiti:field>
+        </activiti:taskListener>
+      </extensionElements>
+		</userTask>
     <sequenceFlow id="_16" sourceRef="isConfirmed" targetRef="accountingApproval">
       <conditionExpression xsi:type="tFormalExpression"><![CDATA[${adwf_approveRejectOutcome == 'Approve'}]]></conditionExpression>
     </sequenceFlow>

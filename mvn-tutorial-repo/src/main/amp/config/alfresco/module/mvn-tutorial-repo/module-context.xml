@@ -26,25 +26,6 @@
             <list>
                 <props>
                     <prop key="engineId">activiti</prop>
-                    <prop key="location">alfresco/module/${project.artifactId}/workflows/helloWorld.bpmn</prop>
-                    <prop key="mimetype">text/xml</prop>
-                    <prop key="redeploy">false</prop>
-                </props>
-                <props>
-                    <prop key="engineId">activiti</prop>
-                    <prop key="location">alfresco/module/${project.artifactId}/workflows/helloWorldFork.bpmn</prop>
-                    <prop key="mimetype">text/xml</prop>
-                    <prop key="redeploy">false</prop>
-                </props>
-                <props>
-                    <prop key="engineId">activiti</prop>
-                    <prop key="location">alfresco/module/${project.artifactId}/workflows/helloWorldUI.bpmn</prop>
-                    <prop key="mimetype">text/xml</prop>
-                    <prop key="redeploy">false</prop>
-                </props>
-
-                <props>
-                    <prop key="engineId">activiti</prop>
                     <prop key="location">alfresco/module/${project.artifactId}/workflows/autoDeal.bpmn</prop>
                     <prop key="mimetype">text/xml</prop>
                     <prop key="redeploy">true</prop>
@@ -53,14 +34,13 @@
         </property>
         <property name="models">
             <list>
-                <value>alfresco/module/${project.artifactId}/model/scWorkflowModel.xml</value>
                 <value>alfresco/module/${project.artifactId}/model/autoDealWorkflowModel.xml</value>
             </list>
         </property>
         <property name="labels">
             <list>
-                <value>alfresco.module.${project.artifactId}.messages.scWorkflow</value>
-                <value>alfresco.module.${project.artifactId}.messages.autoDealWorkflow</value>
+                <value>alfresco.module.${project.artifactId}.messages.autoDealWorkflow_en</value>
+                <value>alfresco.module.${project.artifactId}.messages.autoDealWorkflow_ru</value>
             </list>
         </property>
     </bean>

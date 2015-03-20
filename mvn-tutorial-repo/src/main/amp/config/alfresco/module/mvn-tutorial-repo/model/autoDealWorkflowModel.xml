@@ -100,6 +100,21 @@
                     <type>d:text</type>
                     <mandatory>true</mandatory>
                     <multiple>false</multiple>
+                    <constraints>
+                        <constraint type="LIST" name="adwf:carSelectionList">
+                            <parameter name="allowedValues">
+                                <list>
+                                    <value>BMW</value>
+                                    <value>Mercedes</value>
+                                    <value>Audi</value>
+                                    <value>Skoda</value>
+                                    <value>Lada</value>
+                                    <value>Nissan</value>
+                                    <value>Koenigsegg</value>
+                                </list>
+                            </parameter>
+                        </constraint>
+                    </constraints>
                 </property>
                 <property name="adwf:modelSelection">
                     <type>d:text</type>
